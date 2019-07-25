@@ -1,0 +1,86 @@
+How to insert a link
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>The herf Attribute</h2>
+<p>HTML links are defined with the a tag. The link address is specified in the href 
+attribute:</p>
+
+<a href = "https://www.w3schools.com">This is a link</a>
+
+</body>
+</html>
+
+How to insert an image:
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>The src Attribute</h2>
+<p>HTML images are defined with the img tag, and the file name of the image
+source is specified in the src attribute:</p>
+
+<img src="img_girl.jpg" width ="500" height="600">
+
+</body>
+</html>
+
+What if an image doesn't exist or cannot be shown? Use alt
+<!DOCTYPE html>
+<html>
+<body>
+
+<img src="img_typo.jpg" alt="Girl with a jacket">
+
+<p>If we try to display an image that does not exist, the value of the alt attribute will
+be displayed instead.</p>
+
+</body>
+</html>
+
+The style attribute is used to specify the styling of an element, like color, font, size...
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>The style attribute.</h2>
+<p>The style attribute is used to specify the styling of an element, like color..</p>
+
+<p style="color: red">This is a paragraph.</p>
+
+</body>
+</html>
+
+
+The language used in the page is declared in lang attribute.
+<!DOCTYPE html>
+<html lang="en-US">
+<body>
+.....
+</body>
+</html>
+
+Tooltip: title attribute (Like an explanation)
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2 title= "I'm a tooltip">The title Attribute.</h2>
+
+<p title="I'm a tooltip">Mouse over this paragraph, to display the title attribute
+as a tooltip.</p>
+
+</body>
+</html>
+
+
+Summary: All HTML elements can have attribute.
+Element: <html> <body> <p><h1><img>..
+Attribute:
+1) Link: For a web. href
+2) Link: For an image. src
+3) If image does not exist, alt.
+4) Set font, size, color, style.
+5) Extra information about an element, title.

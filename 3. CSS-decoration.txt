@@ -1,0 +1,79 @@
+CSS修饰文本可分为两种：
+1）字体样式，作用于字体文本的属性，例如，font，size，color
+2）文本布局风格，作用于文本的间距和布局，例如，行间距，文本对齐方式
+
+颜色：
+p{
+   color: red;
+}
+
+字体：
+p{
+   font-family: arial;
+}
+有时候网页会找不到我们提供的字体样式，这时我们可以通过提供多个字体样式，
+解决这个问题：字体栈 font stack
+p{
+    pont-family: “Trebuchet MS", Verdana, sans-serif;
+}
+其中，Trebuchet MS也是以重字体，但因为有两个单词，所以用”“包裹。
+网页会按照顺序查找字体，直到找到为止。
+
+字体大小的单位：
+1）px h1=32px
+2）em，1em=16px
+3）rem, 只支持Internet Explorer 8以上的版本。以下的版本可以用px/em
+
+一般会设置文档的基础文本大小为10px，这样后续的计算会变得简单
+例如：
+html{
+        font-size: 10px;
+}
+h1{
+     font-size: 2.6rem;
+}
+p{
+   font-size: 1.4rem;
+   color: red;
+   font-family: Helvetica, Arial, sans-serif;
+}
+其他字体样式： 
+1) font-style: 字体斜体等。 normal, italic, oblique
+2) font-weight: 字体粗细。 normal, bold, lighter, bolder
+3) text-transform: 允许你设置要转换的字体。none: 防止任何转换。
+uppercase, lowercase, capitalize, full-width
+4) text-decoration: 字体装饰。none, underline, overline,
+line-through
+
+html{
+        font-size: 10px;
+}
+h1{
+     font-size: 2.6rem;
+     text-transform: capitalize;
+}
+h1+p{
+          font-weight: bold;
+}
+p{
+   font-size: 1.4rem;
+   color: red;
+   font-family: Helvetica, Arial, sans-serif;
+}
+
+文本布局
+文本对齐
+text-align: left（左对齐文本）
+text-align: right （右对齐）
+text-align: center (居中）
+text-align: justify (使文本展开，所有文本行长度相同）
+
+行高，通常设置为1.5
+line-height: 1.5;
+
+字母和单词间距
+p::first-line{
+                  letter-spacing: 2px;
+                  word-spacing: 4px;
+}
+
